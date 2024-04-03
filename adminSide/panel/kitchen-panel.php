@@ -15,8 +15,8 @@ $result = mysqli_query($link, $query);
     <div class="container-fluid pt-5 pl-600 mt-5">
           <div class="">
             <div class="col" style="text-align: left; display: flex; justify-content: space-between;">
-                <h2 class="">Kitchen Orders</h2>
-                <a href="../posBackend/kitchenBackend/undo.php?UndoUnshow=true" class="btn btn-warning mb-2">Undo</a>
+                <h2 class="">Pedidos de cozinha</h2>
+                <a href="../posBackend/kitchenBackend/undo.php?UndoUnshow=true" class="btn btn-warning mb-2">Desfazer</a>
             </div>
           </div>
 
@@ -24,13 +24,13 @@ $result = mysqli_query($link, $query);
             <thead>
                 
                 <tr>
-                    <th>Kitchen ID</th>
-                    <th>Table ID</th>
-                    <th>Item Name</th>
-                    <th>Quantity</th>
-                    <th>Time Submitted</th>
-                    <th>Time Ended</th>
-                    <th>Actions</th>
+                    <th>ID da cozinha</th>
+                    <th>ID da tabela</th>
+                    <th>Nome do item</th>
+                    <th>Quandtidade</th>
+                    <th>Hora de envio</th>
+                    <th>Tempo encerrado</th>
+                    <th>Ação</th>
                 </tr>
             </thead>
             <tbody>
@@ -59,14 +59,14 @@ $result = mysqli_query($link, $query);
                         echo '<td>' . ($time_ended ?: 'Not Ended') . '</td>';
                         echo '<td>';
                         if (!$time_ended) {
-                            echo '<a href="../posBackend/kitchenBackend/kitchen-panel-back.php?action=set_time_ended&kitchen_id=' . $kitchen_id . '" class="btn btn-danger">Done</a>';
+                            echo '<a href="../posBackend/kitchenBackend/kitchen-panel-back.php?action=set_time_ended&kitchen_id=' . $kitchen_id . '" class="btn btn-danger">Feito</a>';
                         }
                         
                         echo '</td>';
                         echo '</tr>';
                     }
                 } else {
-                    echo '<tr><td colspan="7">No records in the Kitchen table.</td></tr>';
+                    echo '<tr><td colspan="7">Não há registros na tabela da cozinha.</td></tr>';
                 }
                 ?>
             </tbody>
