@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 <head>
     <meta charset="UTF-8">  
-    <title>Update Item</title>
+    <title>Atualizar item</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
      <style>
@@ -126,34 +126,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="login_wrapper">
    
     <div class="wrapper">
-    <h2 style="text-align: center;">Update Item</h2>
-    <h5>Admin Credentials needed to Edit Item</h5>
+    <h2 style="text-align: center;">Atualizar item</h2>    
     <form action="" method="post" >
         <div class="form-group">
-            <label for="item_name"  class="form-label" >Item Name:</label>
+            <label for="item_name"  class="form-label" >Nome do item:</label>
             <input type="text" name="item_name" id="item_name" class="form-control"  placeholder="Spaghetti" value="<?php echo htmlspecialchars($item_name); ?>" required>
         </div>
         <div class="form-group">
-            <label for="item_type"  class="form-label">Item Type:</label>
+            <label for="item_type"  class="form-label">Tipo de item:</label>
             <input type="text" name="item_type" id="item_type" class="form-control"placeholder="Beer, Cocktail, etc .." value="<?php echo htmlspecialchars($item_type); ?>" required>
         </div>
         <div class="form-group"  class="form-label">
-            <label for="item_category" >Item Category:</label>
+            <label for="item_category" >Categoria de item:</label>
             <input type="text" name="item_category" id="item_category" class="form-control" placeholder="Main Dish/ Side Dish/ Drinks" value="<?php echo htmlspecialchars($item_category); ?>" required>
         </div>
         <div class="form-group" class="form-label">
-            <label for="item_price">Item Price:</label>
+            <label for="item_price">Preço do item:</label>
             <input type="number" min=0.01 step="0.01" name="item_price" id="item_price" placeholder="Enter Item Price"class="form-control" value="<?php echo htmlspecialchars($item_price);?>" required>
         </div>
         <div class="form-group" >
-            <label for="item_description" class="form-label" >Item Description:</label>
+            <label for="item_description" class="form-label" >Descrição do item:</label>
             <textarea name="item_description" id="item_description" placeholder="The dish...." required class="form-control"> <?php echo htmlspecialchars($item_description); ?> </textarea>
       
         </div>
         <br>
         <input type="hidden" name="item_id" value="   class="form-control">
-        <button class="btn btn-light" type="submit" name="submit" value="submit">Update</button>
-        <a class="btn btn-danger" href="../panel/menu-panel.php" >Cancel</a>
+        <button class="btn btn-light" type="submit" name="submit" value="submit">Alterar</button>
+        <a class="btn btn-danger" href="../panel/menu-panel.php" >Cancelar</a>
     </form>
     </div>
         </div>

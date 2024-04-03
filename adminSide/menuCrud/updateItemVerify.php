@@ -39,21 +39,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="login-container">
         <div class="login_wrapper">
             <div class="wrapper">
-                <h2 style="text-align: center;">Admin Login</h2>
-                <h5>Admin Credentials needed to Edit Item</h5>
+                <h2 style="text-align: center;">Login de administrador</h2>
+                <h5>Credenciais de administrador necessárias para editar o item</h5>
                 <form class="mt-2" action="" method="post">
                     <div class="form-group">
-                        <label>Admin Id</label>
+                        <label>ID do administrador ex: 99999</label>
                         <input type="number" name="admin_id" class="form-control" placeholder="Enter Admin ID" required>
                     </div>
 
                     <div class="form-group">
-                        <label>Password</label>
+                        <label>Senha ex: 12345</label>
                         <input type="password" name="password" class="form-control" placeholder="Enter Admin Password" required>
                     </div>
 
                     <button class="btn btn-light" type="submit" name="submit" value="submit">Login</button>
-                    <a class="btn btn-danger" href="../panel/menu-panel.php" >Cancel</a>
+                    <a class="btn btn-danger" href="../panel/menu-panel.php" >Cancelar</a>
                 </form>
             </div>
         </div>

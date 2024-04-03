@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Execute the query
         if ($stmt->execute()) {
-            $message = "Item created successfully.";
+            $message = "Item criado com sucesso.";
             $iconClass = "fa-check-circle";
             $cardClass = "alert-success";
             $bgColor = "#D4F4DD"; // Custom background color for success
@@ -139,7 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p><?php echo $message; ?></p>
     </div>
 
-    <div style="text-align: center; margin-top: 20px;">Redirecting back in <span id="countdown">3</span></div>
+    <div style="text-align: center; margin-top: 20px;">Redirecionando de volta <span id="countdown">3</span></div>
 
     <script>
         // Function to show the message card as a pop-up and start the countdown
