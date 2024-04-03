@@ -11,22 +11,22 @@ session_start(); // Ensure session is started
         <div class="row">
             <div class="m-50">
                 <div class="mt-5 mb-3">
-                    <h2 class="pull-left">Account Details</h2>
-                    <a href="../staffCrud/createStaff.php" class="btn btn-outline-dark"><i class="fa fa-plus"></i> Add Staff</a>
-                    <a href="../customerCrud/createCust.php" class="btn btn-outline-dark"><i class="fa fa-plus"></i> Add Memberships</a>
+                    <h2 class="pull-left">Detalhes da conta</h2>
+                    <a href="../staffCrud/createStaff.php" class="btn btn-outline-dark"><i class="fa fa-plus"></i> Adicionar equipe</a>
+                    <a href="../customerCrud/createCust.php" class="btn btn-outline-dark"><i class="fa fa-plus"></i> Adicionar assinaturas</a>
                 </div>
                 
                 <div class="mb-3">
                     <form method="POST" action="#">
                         <div class="row">
                             <div class="col-md-6">
-                                <input required type="text" id="search" name="search" class="form-control" placeholder="Enter Account ID, Email">
+                                <input required type="text" id="search" name="search" class="form-control" placeholder="Insira o ID da conta">
                             </div>
                             <div class="col-md-3">
-                                <button type="submit" class="btn btn-dark">Search</button>
+                                <button type="submit" class="btn btn-dark">Pesquisar</button>
                             </div>
                             <div class="col" style="text-align: right;" >
-                                <a href="account-panel.php" class="btn btn-light">Show All</a>
+                                <a href="account-panel.php" class="btn btn-light">Mostre tudo</a>
                             </div>
                         </div>
                     </form>
@@ -62,11 +62,11 @@ session_start(); // Ensure session is started
                         echo '<table class="table table-bordered table-striped">';
                         echo "<thead>";
                         echo "<tr>";
-                        echo "<th>Account ID</th>";
+                        echo "<th>ID da conta</th>";
                         echo "<th>Email</th>";
-                        echo "<th>Register Date</th>";
-                        echo "<th>Phone Number</th>";
-                        echo "<th>Password</th>";
+                        echo "<th>Data de regstro</th>";
+                        echo "<th>Telefone</th>";
+                        echo "<th>Senha</th>";
                         //echo "<th>Account Type</th>"; // Display account type
                        // echo "<th>Delete</th>";
                         echo "</tr>";
