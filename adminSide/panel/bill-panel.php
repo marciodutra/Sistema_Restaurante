@@ -11,17 +11,17 @@ session_start(); // Ensure session is started
         <div class="row">
             <div class="m-50">
                 <div class="mt-5 mb-3">
-                    <h2 class="pull-left">Search Bills Details</h2>
+                    <h2 class="pull-left">Pesquisar detalhes de contas</h2>
                     <form method="POST" action="#">
                         <div class="row">
                             <div class="col-md-6">
-                                <input required type="text" id="search" name="search" class="form-control" placeholder="Enter Bill ID, Table ID, Card ID, Payment Method">
+                                <input required type="text" id="search" name="search" class="form-control" placeholder="Insira o ID da fatura, ID da tabela, ID do cartão, forma de pagamento">
                             </div>
                             <div class="col-md-3">
-                                <button type="submit" class="btn btn-dark">Search</button>
+                                <button type="submit" class="btn btn-dark">Pesquisar</button>
                             </div>
                             <div class="col" style="text-align: right;" >
-                                <a href="bill-panel.php" class="btn btn-light">Show All</a>
+                                <a href="bill-panel.php" class="btn btn-light">Mostre tudo</a>
                             </div>
                         </div>
                     </form>
@@ -49,17 +49,17 @@ session_start(); // Ensure session is started
                         echo '<table class="table table-bordered table-striped" >';
                         echo "<thead>";
                         echo "<tr>";
-                        echo "<th>Bill ID</th>";
-                        echo "<th>Staff ID</th>";
-                        echo "<th>Member ID</th>";
-                        echo "<th>Reservation ID</th>";
-                        echo "<th>Table ID</th>";
-                        echo "<th>Card ID</th>";
-                        echo "<th>Payment Method</th>";
-                        echo "<th style='width:13em'>Bill Time</th>";
-                        echo "<th style='width:13em'>Payment Time</th>";
+                        echo "<th>ID da fatura</th>";
+                        echo "<th>ID da equipe</th>";
+                        echo "<th>ID de membro</th>";
+                        echo "<th>ID da reserva</th>";
+                        echo "<th>ID da tabela</th>";
+                        echo "<th>Cartão de identificação</th>";
+                        echo "<th>Forma de pagamento</th>";
+                        echo "<th style='width:13em'>Hora da fatura</th>";
+                        echo "<th style='width:13em'>Prazo de pagamento</th>";
                        // echo "<th>Delete</th>";
-                        echo "<th>Receipt</th>";
+                        echo "<th>Recibo</th>";
                         echo "</tr>";
                         echo "</thead>";
                         echo "<tbody>";

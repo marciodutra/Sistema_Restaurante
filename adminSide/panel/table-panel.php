@@ -10,20 +10,20 @@ session_start(); // Ensure session is started
             <div class="row">
                 <div class="m-50">
                     <div class="mt-5 mb-3">
-                        <h2 class="pull-left">Table Details</h2>
-                        <a href="../tableCrud/createTable.php" class="btn btn-outline-dark"><i class="fa fa-plus"></i> Add Table</a>
+                        <h2 class="pull-left">Detalhes da tabela</h2>
+                        <a href="../tableCrud/createTable.php" class="btn btn-outline-dark"><i class="fa fa-plus"></i> Adicionar tabela</a>
                     </div>
                     <div class="mb-3">
                     <form method="POST" action="#">
                         <div class="row">
                             <div class="col-md-6">
-                                <input required type="text" id="search" name="search" class="form-control" placeholder="Enter Table ID, Capacity">
+                                <input required type="text" id="search" name="search" class="form-control" placeholder="Insira o ID da tabela">
                             </div>
                             <div class="col-md-3" >
-                                <button type="submit" class="btn btn-dark">Search</button>
+                                <button type="submit" class="btn btn-dark">Pesquisar</button>
                             </div>
                             <div class="col" style="text-align: right;" >
-                                <a href="table-panel.php" class="btn btn-light">Show All</a>
+                                <a href="table-panel.php" class="btn btn-light">Mostre tudo</a>
                             </div>
                         </div>
                     </form>
@@ -61,9 +61,9 @@ session_start(); // Ensure session is started
                             echo '<table class="table table-bordered table-striped">';
                                 echo "<thead>";
                                     echo "<tr>";
-                                        echo "<th>Table ID</th>";
-                                        echo "<th>Capacity</th>";
-                                        echo "<th>Availability</th>";
+                                        echo "<th>ID</th>";
+                                        echo "<th>Capacidade</th>";
+                                        echo "<th>Disponibilidade</th>";
                                         //echo "<th>Delete</th>";
                                     echo "</tr>";
                                 echo "</thead>";
@@ -71,11 +71,11 @@ session_start(); // Ensure session is started
                                 while($row = mysqli_fetch_array($result)){
                                     echo "<tr>";
                                         echo "<td>" . $row['table_id'] . "</td>";
-                                        echo "<td>" . $row['capacity'] . " Persons </td>";
+                                        echo "<td>" . $row['capacity'] . " Pessoas </td>";
                                         if ($row['is_available'] == true) {
-                                            echo "<td>" . "Yes" . "</td>";
+                                            echo "<td>" . "Sim" . "</td>";
                                         } else {
-                                            echo "<td>" . "No" . "</td>";
+                                            echo "<td>" . "Não" . "</td>";
                                         }
                                       
                                      //   echo "<td>";

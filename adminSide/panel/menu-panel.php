@@ -11,7 +11,7 @@ session_start(); // Ensure session is started
         <div class="row">
             <div class="m-50">
                 <div class="mt-5 mb-3">
-                    <h2 class="pull-left">Items Details</h2>
+                    <h2 class="pull-left">Detalhes dos itens</h2>
                     <a href="../menuCrud/createItem.php" class="btn btn-outline-dark"><i class="fa fa-plus"></i> Add Item</a>
                 </div>
                 <div class="mb-3">
@@ -19,18 +19,18 @@ session_start(); // Ensure session is started
                         <div class="row">
                             <div class="col-md-6">
                                 <select name="search" id="search" class="form-control">
-                                    <option value="">Select Item Type or Item Category</option>      
-                                    <option value="Main Dishes">Main Dishes</option>
-                                    <option value="Side Snacks">Side Snacks</option>
-                                    <option value="Drinks">Drinks</option>                                    
-                                    <option value="Steak & Ribs">Steak & Ribs</option>
-                                    <option value="Seafood">Seafood</option>
-                                    <option value="Pasta">Pasta</option>
-                                    <option value="Lamb">Lamb</option>
-                                    <option value="Chicken">Chicken</option>
-                                    <option value="Burgers & Sandwiches">Burgers & Sandwiches</option>
-                                    <option value="Bar Bites">Bar Bites</option>
-                                    <option value="House Dessert">House Dessert</option>
+                                    <option value="">Selecione o tipo de item ou categoria de item</option>      
+                                    <option value="Main Dishes">Pratos principais</option>
+                                    <option value="Side Snacks">Lanches</option>
+                                    <option value="Drinks">Bebidas</option>                                    
+                                    <option value="Steak & Ribs">Bife e Costela</option>
+                                    <option value="Seafood">Frutos do mar</option>
+                                    <option value="Pasta">Massas</option>
+                                    <option value="Lamb">Cordeiro</option>
+                                    <option value="Chicken">Frango</option>
+                                    <option value="Burgers & Sandwiches">Hambúrgueres e Sanduíches</option>
+                                    <option value="Bar Bites">Petiscos</option>
+                                    <option value="House Dessert">Sobremesa da Casa</option>
                                     <option value="Salad">Salad</option>
                                     <option value="Shoney Kid">Shoney Kid</option>
                                     <option value="Side Dishes">Side Dishes</option>
@@ -41,10 +41,10 @@ session_start(); // Ensure session is started
                                 </select>
                             </div>
                             <div class="col-md-3">
-                                <button type="submit" class="btn btn-dark">Search</button>
+                                <button type="submit" class="btn btn-dark">Pesquisar</button>
                             </div>
                             <div class="col" style="text-align: right;" >
-                                <a href="menu-panel.php" class="btn btn-light">Show All</a>
+                                <a href="menu-panel.php" class="btn btn-light">Mostre tudo</a>
                             </div>
                         </div>
                     </form>
@@ -72,13 +72,13 @@ session_start(); // Ensure session is started
                         echo '<table class="table table-bordered table-striped">';
                         echo "<thead>";
                         echo "<tr>";
-                        echo "<th>Item ID</th>";
-                        echo "<th>Name</th>";
-                        echo "<th>Type</th>";
-                        echo "<th>Category</th>";
-                        echo "<th>Price</th>";
-                        echo "<th>Description</th>";
-                        echo "<th>Edit</th>";
+                        echo "<th>ID do item</th>";
+                        echo "<th>Nome</th>";
+                        echo "<th>Tipo</th>";
+                        echo "<th>Categoria</th>";
+                        echo "<th>Preço</th>";
+                        echo "<th>Descrição</th>";
+                        echo "<th>Editar</th>";
                         //echo "<th>Delete</th>";
                         echo "</tr>";
                         echo "</thead>";
@@ -95,7 +95,7 @@ session_start(); // Ensure session is started
                             // Modify link with the pencil icon
                              $update_sql = "UPDATE Menu SET item_name=?, item_type=?, item_category=?, item_price=?, item_description=? WHERE item_id=?";
                             echo '<a href="../menuCrud/updateItemVerify.php?id='. $row['item_id'] .'" title="Modify Record" data-toggle="tooltip"'
-                                    . 'onclick="return confirm(\'Admin permission Required!\n\nAre you sure you want to Edit this Item?\')">'
+                                    . 'onclick="return confirm(\'Permissão de administrador necessária!\n\nTem certeza de que deseja editar este item?\')">'
                              . '<i class="fa fa-pencil" aria-hidden="true"></i></a>';
                             echo "</td>";
 
