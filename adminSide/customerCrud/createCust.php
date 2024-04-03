@@ -80,40 +80,40 @@ $next_account_id = getNextAvailableAccountID($link);
 </head>
 
 <div class="wrapper">
-    <h3>Create New Membership</h3>
-    <p>Please fill in Membership Information</p>
+    <h3>Criar nova associação</h3>
+    <p>Por favor preencha as informações de associação</p>
 
     <form method="POST" action="success_createMembership.php" class="ht-600 w-50">
         
         <div class="form-group">
-            <label for="member_id" class="form-label">Member ID:</label>
+            <label for="member_id" class="form-label">ID de membro:</label>
             <input min="1" type="number" name="member_id" placeholder="1" class="form-control <?php echo $member_id_err ? 'is-invalid' : ''; ?>" id="member_id" required value="<?php echo $next_member_id; ?>" readonly><br>
-            <div class="invalid-feedback">
-                Please provide a valid member_id.
+            <div class="invalid-feedback">                
+            Forneça um id válido.
             </div>
         </div>
         
         <div class="form-group">
-            <label for="member_name" class="form-label">Member Name :</label>
+            <label for="member_name" class="form-label">Nome do membro :</label>
             <input type="text" name="member_name" placeholder="Johnny Hatsoff" class="form-control <?php echo $member_name_err ? 'is-invalid' : ''; ?>" id="member_name" required value="<?php echo $member_name; ?>"><br>
             <div class="invalid-feedback">
-                Please provide a valid member name.
+            Forneça um nome de membro válido.
             </div>
         </div>
 
         <div class="form-group">
-            <label for="points">Points :</label>
+            <label for="points">Pontos :</label>
             <input type="number" name="points" id="points" placeholder="1234" required class="form-control <?php echo $points_err ? 'is-invalid' : ''; ?>" value="<?php echo $points; ?>"><br>
-            <div class="invalid-feedback">
-                Please provide valid points.
+            <div class="invalid-feedback">                
+            Forneça pontos válidos.
             </div>
         </div>
 
         <div class="form-group">
-            <label for="account_id" class="form-label">Account ID:</label>
+            <label for="account_id" class="form-label">ID da conta:</label>
             <input min="1" type="number" name="account_id" placeholder="99" class="form-control <?php echo !$account_idErr ?: 'is-invalid'; ?>" id="account_id" required value="<?php echo $next_account_id; ?>" readonly><br>
             <div id="validationServerFeedback" class="invalid-feedback">
-                Please provide a valid account_id.
+            Forneça um id válido
             </div>
         </div>
         
@@ -121,36 +121,37 @@ $next_account_id = getNextAvailableAccountID($link);
             <label for="email" class="form-label">Email :</label>
             <input type="text" name="email" placeholder="johnny12@dining.bar.com" class="form-control <?php echo !$emailErr ?: 'is-invalid'; ?>" id="email" required value="<?php echo $email; ?>"><br>
             <div id="validationServerFeedback" class="invalid-feedback">
-                Please provide a valid email.
+                
+                Por favor forneça um email válido.
             </div>
         </div>
 
         <div class="form-group">
-            <label for="register_date">Register Date :</label>
+            <label for="register_date">Data de registo :</label>
             <input type="date" name="register_date" id="register_date" required class="form-control <?php echo !$register_date_err ?: 'is-invalid';?>" value="<?php echo $register_date; ?>"><br>
             <div id="validationServerFeedback" class="invalid-feedback">
-                Please provide a valid register date.
+                Forneça uma data de registro válida.
             </div>
         </div>
 
         <div class="form-group">
-            <label for="phone_number" class="form-label">Phone Number:</label>
+            <label for="phone_number" class="form-label">Telefone:</label>
             <input type="text" name="phone_number" placeholder="+60101231234" class="form-control <?php echo !$phone_numberErr ?: 'is-invalid'; ?>" id="phone_number" required value="<?php echo $phone_number; ?>"><br>
-            <div id="validationServerFeedback" class="invalid-feedback">
-                Please provide a valid phone number.
+            <div id="validationServerFeedback" class="invalid-feedback">                
+            Por favor forneça um número de telefone válido.
             </div>
         </div>
 
         <div class="form-group">
-            <label for="password">Password :</label>
+            <label for="password">Senha :</label>
             <input type="password" name="password" placeholder="johnny1234@" id="password" required class="form-control <?php echo !$password_err ?: 'is-invalid' ; ?>" value="<?php echo $password; ?>"><br>
-            <div id="validationServerFeedback" class="invalid-feedback">
-                Please provide a valid password.
+            <div id="validationServerFeedback" class="invalid-feedback">                
+            Forneça uma senha válida.
             </div>
         </div>
         
         <div class="form-group mb-5">
-            <input type="submit" name="submit" class="btn btn-dark" value="Create Membership">
+            <input type="submit" name="submit" class="btn btn-dark" value="Criar associação">
         </div>
     </form>
 </div>
