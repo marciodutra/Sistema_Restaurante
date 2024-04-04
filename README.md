@@ -1,83 +1,44 @@
-## Restaurant POS and Website
+**Usando:** Php 7.4
 
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/homehomepage.png?raw=true)
-
-**Built with these:** 
-<p align="left">
-   <a href="#">
-      <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
-      <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
-      <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
-      <img alt="Php" src="https://img.shields.io/badge/php-474a8a?style=for-the-badge&logo=php&logoColor=white" />
-      <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black"/>
-   </a>
-</p>
-
-**Using:** Php 7.4
-
-**Features:**
-* **Customer Side (customerSide Folder):** Stores the website and allows customers to:
-    * Make reservations
-    * Register for accounts
-    * View profile points
-* **Staff Side (adminSide Folder):** Stores the panels and allows staff to:
-    * Take orders
-    * Send orders to the kitchen
-    * Process payments
-    * Print receipts
-    * Manage CRUD operations
-    * View user preferences
-    * Download reports
-    * View charts and graph
+**Características:**
+* **Lado do cliente (pasta customerSide):** Armazena o site e permite que os clientes:
+    * Fazer reservas
+    * Registre-se para contas
+    * Ver pontos de perfil
+* **Lado da equipe (pasta adminSide):** Armazena os painéis e permite que a equipe:
+    * Receber pedidos
+    * Envie pedidos para a cozinha
+    * Processar pagamentos
+    * Imprimir recibos
+    * Gerenciar operações CRUD
+    * Veja as preferências do usuário
+    * Baixar relatórios
+    * Ver gráficos e gráficos
 
 
 
-**Steps to run the project locally for Netbeans Manually:**
+**Etapas para executar o projeto localmente para Netbeans manualmente:**
 
-1. Open XAMPP, start Apache and MySQL.
-2. Create a new project named `RestaurantProject`.
-3. Delete the `index.php` file.
-4. Copy all the folders and files (adminSide, customerSide, index.php, and restaurantDB.txt) into the `Source Files` directory.
-5. Make sure there is no database named `restaurantdb`.
-6. Run the project.
+1. Abra o XAMPP, inicie o Apache e o MySQL.
+2. Crie um novo projeto chamado `RestaurantProject`.
+3. Exclua o arquivo `index.php`.
+4. Copie todas as pastas e arquivos (adminSide, customerSide, index.php e restaurantDB.txt) para o diretório `Source Files`.
+5. Certifique-se de que não haja nenhum banco de dados chamado `restaurantdb`.
+6. Execute o projeto.
 
-## Example accounts
+## Exemplos de contas
 
-| Role | Email | Password |
+| Função | E-mail | Senha |
 |---|---|---|
-| Customer | dadsvawvid@gmail.com | david4pass |
-| Customer | zoe@gmail.com | passworddef |
-| Customer | jackie@gmail.com | passwordstu |
-| Staff | 1 | password123 |
-| Staff | 10 | davidpa2ss |
-| Staff | 7 | robertpass |
-| Admin | 99999 | 12345 |
-
-## Screenshots
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/homehomepage.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/register.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/Login.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/homepageloggedin.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/reservation.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/stafflogin.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/postable.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/orderitembeforepay.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/addmemberidandreservationid.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/cashpaid.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/cardpayment.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/billdpanel.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/tablepanel.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/kitchenpanel.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/salespanel.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/statisticspanel.png?raw=true)
-![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/profilespanel.png?raw=true)
+| Cliente | dadsvawvid@gmail.com | david4pass |
+| Cliente | zoe@gmail.com | senhadef |
+| Cliente | jackie@gmail.com | senhatu |
+| Funcionário | 1 | 051080 |
+| Pessoal | 10 | davidpa2ss |
+| Pessoal | 7 | robertpass |
+| Administrador | 99999 | 12345 |
 
 
 
-## Contributors
 
-| Name | Github |
-|---|---|
-| Bryan | https://github.com/BryanTheLai |
-| Yong | https://github.com/ahhyang |
-| Kevin | https://github.com/kevin07212004 |
+
